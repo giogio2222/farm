@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Artikel - Lestari Organik</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-flower1"></i> Lestari Organik
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="keunggulan.html">Keunggulan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-primary">Wawasan & Berita</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-muted">Beranda</a></li>
+                    <li class="breadcrumb-item active text-primary" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding pt-0">
+        <div class="container">
+
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Cari artikel...">
+            </div>
+
+            <div class="row g-4" id="blogGrid">
+
+                <div class="col-md-4 blog-col">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=500&q=80"
+                            alt="Sayur Organik" class="blog-img">
+                        <div class="blog-body">
+                            <span class="blog-date">22 Jan 2026</span>
+                            <h5 class="blog-title">Manfaat Sayur Organik Bagi Tubuh</h5>
+                            <p class="blog-excerpt">Sayuran organik mengandung lebih banyak antioksidan dan nutrisi
+                                dibandingkan sayuran konvensional. Temukan bagaimana mengonsumsi makanan bebas pestisida
+                                dapat meningkatkan sistem kekebalan tubuh Anda dan keluarga secara signifikan.</p>
+                            <a href="1.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blog-col">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1592841200221-a68997d5a259?auto=format&fit=crop&w=500&q=80"
+                            alt="Menanam Tomat" class="blog-img">
+                        <div class="blog-body">
+                            <span class="blog-date">20 Jan 2026</span>
+                            <h5 class="blog-title">Tips Menanam Tomat di Rumah</h5>
+                            <p class="blog-excerpt">Ingin memetik tomat segar dari halaman sendiri? Simak panduan
+                                lengkap menanam tomat organik dalam pot untuk pemula. Mulai dari pemilihan bibit unggul,
+                                media tanam, hingga perawatan harian yang mudah dilakukan.</p>
+                            <a href="2.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blog-col">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=500&q=80"
+                            alt="Wortel Segar" class="blog-img">
+                        <div class="blog-body">
+                            <span class="blog-date">18 Jan 2026</span>
+                            <h5 class="blog-title">Cara Memilih Wortel yang Segar</h5>
+                            <p class="blog-excerpt">Jangan salah pilih saat berbelanja. Pelajari ciri-ciri wortel
+                                berkualitas tinggi yang manis dan renyah. Perhatikan warna, tekstur kulit, dan kesegaran
+                                daun untuk memastikan Anda mendapatkan nutrisi terbaik.</p>
+                            <a href="3.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blog-col">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80"
+                            alt="Salad Sehat" class="blog-img">
+                        <div class="blog-body">
+                            <span class="blog-date">15 Jan 2026</span>
+                            <h5 class="blog-title">Resep Salad Sehat dan Praktis</h5>
+                            <p class="blog-excerpt">Bosan dengan menu sayur yang itu-itu saja? Coba 5 resep salad
+                                dressing buatan sendiri yang lezat dan rendah kalori ini. Kombinasi sayuran hijau,
+                                kacang-kacangan, dan protein nabati untuk makan siang sempurna.</p>
+                            <a href="4.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blog-col">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?auto=format&fit=crop&w=500&q=80"
+                            alt="Kale Superfood" class="blog-img">
+                        <div class="blog-body">
+                            <span class="blog-date">12 Jan 2026</span>
+                            <h5 class="blog-title">Mengapa Kale Disebut Superfood</h5>
+                            <p class="blog-excerpt">Kale atau kubis keriting memiliki kepadatan nutrisi yang luar biasa.
+                                Kaya akan vitamin K, A, dan C, sayuran ini menjadi primadona pola makan sehat. Pelajari
+                                manfaatnya untuk kesehatan jantung dan tulang.</p>
+                            <a href="5.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blog-col">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=500&q=80"
+                            alt="Perbedaan Organik" class="blog-img">
+                        <div class="blog-body">
+                            <span class="blog-date">10 Jan 2026</span>
+                            <h5 class="blog-title">Perbedaan Sayur Organik dan Biasa</h5>
+                            <p class="blog-excerpt">Masih bingung membedakan produk organik di pasaran? Artikel ini
+                                mengupas tuntas perbedaan proses penanaman, rasa, dan dampak lingkungan antara pertanian
+                                organik dan konvensional.</p>
+                            <a href="6.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blog-col">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=500&q=80"
+                            alt="Menyimpan Sayur" class="blog-img">
+                        <div class="blog-body">
+                            <span class="blog-date">08 Jan 2026</span>
+                            <h5 class="blog-title">Cara Menyimpan Sayuran Agar Awet</h5>
+                            <p class="blog-excerpt">Kurangi limbah makanan dengan teknik penyimpanan yang tepat. Tips
+                                menyimpan dedaunan hijau, umbi-umbian, dan buah agar tetap segar di dalam maupun di luar
+                                kulkas selama berminggu-minggu.</p>
+                            <a href="7.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blog-col">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=500&q=80"
+                            alt="Serat Makanan" class="blog-img">
+                        <div class="blog-body">
+                            <span class="blog-date">05 Jan 2026</span>
+                            <h5 class="blog-title">Pentingnya Serat dalam Makanan</h5>
+                            <p class="blog-excerpt">Serat bukan hanya untuk pencernaan. Asupan serat yang cukup membantu
+                                mengontrol gula darah, menurunkan kolesterol, dan menjaga berat badan ideal. Temukan
+                                sumber serat terbaik dari kebun kami.</p>
+                            <a href="8.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blog-col">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&w=500&q=80"
+                            alt="Makanan Anak" class="blog-img">
+                        <div class="blog-body">
+                            <span class="blog-date">02 Jan 2026</span>
+                            <h5 class="blog-title">Makanan Sehat untuk Anak Anak</h5>
+                            <p class="blog-excerpt">Mengajak anak makan sayur bisa menjadi tantangan. Dapatkan inspirasi
+                                menu bekal sekolah yang lucu, penuh warna, dan tentunya sehat yang pasti disukai buah
+                                hati Anda.</p>
+                            <a href="9.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pagination-container">
+                <button class="page-btn"><i class="bi bi-arrow-left me-2"></i> Sebelumnya</button>
+                <button class="page-btn">Selanjutnya <i class="bi bi-arrow-right ms-2"></i></button>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="cta-section">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2>Dapatkan Info Terbaru & Penawaran Spesial</h2>
+                    <p class="text-muted mb-0">Hubungi kami langsung untuk stok harian yang segar.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <a href="https://wa.me/6282257391460?text=Halo%20Lestari%20Organik,%20saya%20ingin%20info%20promo%20dan%20stok%20terbaru"
+                        target="_blank" class="btn btn-custom btn-lg w-100 py-3 btn-wa-cta">
+                        <i class="bi bi-whatsapp me-2 fs-5"></i> Chat WhatsApp Sekarang
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand mb-3" href="index.html">
+                        <i class="bi bi-flower1"></i> Lestari Organik
+                    </a>
+                    <p class="text-muted mb-3">Misi kami adalah mendorong kemajuan dan meningkatkan kehidupan
+                        pelanggan dengan pangan sehat.</p>
+                    <a href="produk.html" class="btn btn-custom mt-3 btn-sm">Belanja Sekarang <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Tautan Cepat</h6>
+                    <ul class="list-unstyled text-muted lh-lg">
+                        <li><a href="index.html" class="text-decoration-none text-muted">Beranda</a></li>
+                        <li><a href="tentang.html" class="text-decoration-none text-muted">Tentang Kami</a></li>
+                        <li><a href="keunggulan.html" class="text-decoration-none text-muted">Keunggulan</a></li>
+                        <li><a href="produk.html" class="text-decoration-none text-muted">Produk</a></li>
+                        <li><a href="blog.html" class="text-decoration-none text-muted">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Kontak</h6>
+                    <ul class="list-unstyled text-muted lh-lg">
+                        <li><i class="bi bi-whatsapp me-2"></i> 0822-5739-1460</li>
+                        <li><i class="bi bi-envelope me-2"></i> halo@lestariorganik.com</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> Jl. Raya Kebun No. 88, Bogor</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Sosial Media</h6>
+                    <div class="d-flex mb-3">
+                        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top mt-5 pt-4 text-center text-muted">
+                <p>&copy; 2024 Lestari Organik. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <a href="#top" class="btn-float top-float" id="backToTop">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+        <a href="https://wa.me/6282257391460?text=Halo%20Admin,%20saya%20butuh%20bantuan" target="_blank"
+            class="btn-float wa-float">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Navbar Shadow on Scroll
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('shadow-sm');
+            } else {
+                document.querySelector('.navbar').classList.remove('shadow-sm');
+            }
+
+            // Back to Top Visibility
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // Search Filter Logic
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let filter = this.value.toUpperCase();
+            let cards = document.querySelectorAll('.blog-col');
+
+            cards.forEach(card => {
+                let title = card.querySelector('.blog-title').innerText;
+                if (title.toUpperCase().indexOf(filter) > -1) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
