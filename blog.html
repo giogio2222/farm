@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -10,7 +10,376 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+
+    <style>
+        /* --- COPY STYLE DARI TENTANG.HTML (BASE STYLE) --- */
+        :root {
+            --primary-green: #4CAF50;
+            --dark-green: #2E7D32;
+            --light-bg: #F9FBF9;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --wa-color: #25D366;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background-color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Buttons & CTA */
+        .btn-custom {
+            background-color: var(--primary-green);
+            color: white;
+            border-radius: 50px;
+            padding: 10px 30px;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--dark-green);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-wa-cta {
+            background-color: var(--wa-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        .btn-wa-cta:hover {
+            background-color: #1ebc57;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Typography & Layout */
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark-green);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+            font-weight: 500;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-green);
+        }
+
+        /* Page Header */
+        .page-header {
+            background-color: var(--light-bg);
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* --- BLOG SPECIFIC STYLES (ADAPTED TO LESTARI THEME) --- */
+
+        /* Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 4rem auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            background: #fff;
+            border: 2px solid #eee;
+            border-radius: 50px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: var(--text-dark);
+            outline: none;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-green);
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.1);
+        }
+
+        /* Blog Card */
+        .blog-card {
+            background: white;
+            border: none;
+            border-radius: 20px;
+            /* Rounded corners like Tentang page */
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .blog-body {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-date {
+            font-size: 0.85rem;
+            color: var(--primary-green);
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .blog-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            color: var(--text-dark);
+        }
+
+        /* Truncate Excerpt 3 Lines */
+        .blog-excerpt {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.6;
+        }
+
+        .blog-link {
+            margin-top: auto;
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark-green);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s;
+        }
+
+        .blog-link:hover {
+            color: var(--primary-green);
+            gap: 12px;
+        }
+
+        /* Pagination */
+        .pagination-container {
+            border-top: 1px solid #eee;
+            padding-top: 3rem;
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-btn {
+            background: transparent;
+            border: 2px solid #eee;
+            color: var(--text-dark);
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .page-btn:hover {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: #E8F5E9;
+            border-radius: 30px;
+            margin: 60px 0;
+            padding: 60px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0 20px;
+            background: white;
+        }
+
+        footer .list-unstyled li {
+            margin-bottom: 10px;
+        }
+
+        footer p,
+        footer li,
+        footer a {
+            font-size: 1rem;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-dark);
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+
+        /* Floating Buttons */
+        .floating-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+        .btn-float {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 24px;
+        }
+
+        .wa-float {
+            background-color: var(--wa-color);
+            color: white;
+        }
+
+        .wa-float:hover {
+            background-color: #1ebc57;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .top-float {
+            background-color: var(--dark-green);
+            color: white;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .top-float.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .top-float:hover {
+            background-color: var(--primary-green);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                padding-top: 1rem;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 40px 0;
+            }
+
+            .cta-section {
+                padding: 30px;
+            }
+
+            .floating-container {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .btn-float {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+
+            .search-container {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
 </head>
 
 <body id="top">
@@ -37,11 +406,11 @@
 
     <header class="page-header">
         <div class="container">
-            <h1 class="display-5 fw-bold text-primary">Wawasan & Berita</h1>
+            <h1 class="display-5 fw-bold text-success">Wawasan & Berita</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="index.html" class="text-muted">Beranda</a></li>
-                    <li class="breadcrumb-item active text-primary" aria-current="page">Blog</li>
+                    <li class="breadcrumb-item active text-success" aria-current="page">Blog</li>
                 </ol>
             </nav>
         </div>
@@ -58,135 +427,48 @@
 
                 <div class="col-md-4 blog-col">
                     <div class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=500&q=80"
+                        <img src="img/art1.jpeg"
                             alt="Sayur Organik" class="blog-img">
                         <div class="blog-body">
                             <span class="blog-date">22 Jan 2026</span>
-                            <h5 class="blog-title">Manfaat Sayur Organik Bagi Tubuh</h5>
-                            <p class="blog-excerpt">Sayuran organik mengandung lebih banyak antioksidan dan nutrisi
-                                dibandingkan sayuran konvensional. Temukan bagaimana mengonsumsi makanan bebas pestisida
-                                dapat meningkatkan sistem kekebalan tubuh Anda dan keluarga secara signifikan.</p>
-                            <a href="1.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                            <h5 class="blog-title">Bisnis Sayur Organik, Peluang Cuan yang Sayang Dilewatkan</h5>
+                            <p class="blog-excerpt">Pernah nggak sih kamu merasa kalau belakangan ini orang-orang di
+                                sekitar kita jadi lebih "rewel" soal makanan? Sedikit-sedikit cek label kemasan, atau
+                                tanya, "Ini pakai pestisida nggak?". </p>
+                            <a href="bisnis-sayur-organik.html" class="blog-link">Baca Selengkapnya <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 blog-col">
                     <div class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1592841200221-a68997d5a259?auto=format&fit=crop&w=500&q=80"
+                        <img src="img/art2.jpeg"
                             alt="Menanam Tomat" class="blog-img">
                         <div class="blog-body">
                             <span class="blog-date">20 Jan 2026</span>
-                            <h5 class="blog-title">Tips Menanam Tomat di Rumah</h5>
-                            <p class="blog-excerpt">Ingin memetik tomat segar dari halaman sendiri? Simak panduan
-                                lengkap menanam tomat organik dalam pot untuk pemula. Mulai dari pemilihan bibit unggul,
-                                media tanam, hingga perawatan harian yang mudah dilakukan.</p>
-                            <a href="2.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                            <h5 class="blog-title">Sayur Organik vs Biasa, Yakin Pilihanmu Sudah Tepat?</h5>
+                            <p class="blog-excerpt">Pernahkah kamu berdiri termangu di lorong supermarket, memegang dua
+                                ikat bayam di tangan kanan dan kiri? Di satu sisi, ada bayam biasa dengan harga yang
+                                sangat bersahabat.</p>
+                            <a href="perbedaan-sayur-organik-biasa.html" class="blog-link">Baca Selengkapnya <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 blog-col">
                     <div class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=500&q=80"
-                            alt="Wortel Segar" class="blog-img">
+                        <img src="img/art3.jpeg"
+                            alt="Sayuran Segar" class="blog-img">
                         <div class="blog-body">
-                            <span class="blog-date">18 Jan 2026</span>
-                            <h5 class="blog-title">Cara Memilih Wortel yang Segar</h5>
-                            <p class="blog-excerpt">Jangan salah pilih saat berbelanja. Pelajari ciri-ciri wortel
-                                berkualitas tinggi yang manis dan renyah. Perhatikan warna, tekstur kulit, dan kesegaran
-                                daun untuk memastikan Anda mendapatkan nutrisi terbaik.</p>
-                            <a href="3.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 blog-col">
-                    <div class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80"
-                            alt="Salad Sehat" class="blog-img">
-                        <div class="blog-body">
-                            <span class="blog-date">15 Jan 2026</span>
-                            <h5 class="blog-title">Resep Salad Sehat dan Praktis</h5>
-                            <p class="blog-excerpt">Bosan dengan menu sayur yang itu-itu saja? Coba 5 resep salad
-                                dressing buatan sendiri yang lezat dan rendah kalori ini. Kombinasi sayuran hijau,
-                                kacang-kacangan, dan protein nabati untuk makan siang sempurna.</p>
-                            <a href="4.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 blog-col">
-                    <div class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?auto=format&fit=crop&w=500&q=80"
-                            alt="Kale Superfood" class="blog-img">
-                        <div class="blog-body">
-                            <span class="blog-date">12 Jan 2026</span>
-                            <h5 class="blog-title">Mengapa Kale Disebut Superfood</h5>
-                            <p class="blog-excerpt">Kale atau kubis keriting memiliki kepadatan nutrisi yang luar biasa.
-                                Kaya akan vitamin K, A, dan C, sayuran ini menjadi primadona pola makan sehat. Pelajari
-                                manfaatnya untuk kesehatan jantung dan tulang.</p>
-                            <a href="5.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 blog-col">
-                    <div class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=500&q=80"
-                            alt="Perbedaan Organik" class="blog-img">
-                        <div class="blog-body">
-                            <span class="blog-date">10 Jan 2026</span>
-                            <h5 class="blog-title">Perbedaan Sayur Organik dan Biasa</h5>
-                            <p class="blog-excerpt">Masih bingung membedakan produk organik di pasaran? Artikel ini
-                                mengupas tuntas perbedaan proses penanaman, rasa, dan dampak lingkungan antara pertanian
-                                organik dan konvensional.</p>
-                            <a href="6.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 blog-col">
-                    <div class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=500&q=80"
-                            alt="Menyimpan Sayur" class="blog-img">
-                        <div class="blog-body">
-                            <span class="blog-date">08 Jan 2026</span>
-                            <h5 class="blog-title">Cara Menyimpan Sayuran Agar Awet</h5>
-                            <p class="blog-excerpt">Kurangi limbah makanan dengan teknik penyimpanan yang tepat. Tips
-                                menyimpan dedaunan hijau, umbi-umbian, dan buah agar tetap segar di dalam maupun di luar
-                                kulkas selama berminggu-minggu.</p>
-                            <a href="7.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 blog-col">
-                    <div class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=500&q=80"
-                            alt="Serat Makanan" class="blog-img">
-                        <div class="blog-body">
-                            <span class="blog-date">05 Jan 2026</span>
-                            <h5 class="blog-title">Pentingnya Serat dalam Makanan</h5>
-                            <p class="blog-excerpt">Serat bukan hanya untuk pencernaan. Asupan serat yang cukup membantu
-                                mengontrol gula darah, menurunkan kolesterol, dan menjaga berat badan ideal. Temukan
-                                sumber serat terbaik dari kebun kami.</p>
-                            <a href="8.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 blog-col">
-                    <div class="blog-card">
-                        <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&w=500&q=80"
-                            alt="Makanan Anak" class="blog-img">
-                        <div class="blog-body">
-                            <span class="blog-date">02 Jan 2026</span>
-                            <h5 class="blog-title">Makanan Sehat untuk Anak Anak</h5>
-                            <p class="blog-excerpt">Mengajak anak makan sayur bisa menjadi tantangan. Dapatkan inspirasi
-                                menu bekal sekolah yang lucu, penuh warna, dan tentunya sehat yang pasti disukai buah
-                                hati Anda.</p>
-                            <a href="9.html" class="blog-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                            <span class="blog-date">30 Jan 2026</span>
+                            <h5 class="blog-title">Sayuran Cepat Busuk? Ini Rahasia Awet Berminggu-minggu</h5>
+                            <p class="blog-excerpt">Pernah nggak sih kamu merasa guilty saat membuka laci bawah kulkas
+                                di akhir minggu? Niat hati ingin hidup sehat dengan stok sayuran penuh, tapi realitanya
+                                malah menemukan bayam yang sudah berlendir.</p>
+                            <a href="tips-simpan-sayur-awet.html" class="blog-link">Baca Selengkapnya <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

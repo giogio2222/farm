@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayuran Cepat Busuk? Ini Rahasia Awet Berminggu-minggu - Lestari Organik</title>
+
+    <meta name="description"
+        content="Temukan rahasia menyimpan sayuran agar tetap segar berminggu-minggu di kulkas. Pelajari teknik food prep, pengelolaan kelembapan, dan cara memisahkan gas etilen.">
+    <meta name="keywords"
+        content="menyimpan sayuran, sayur awet di kulkas, food preparation, tips dapur, sayuran segar, lestari organik">
+    <meta name="author" content="Lestari Organik">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* --- 1. GLOBAL VARIABLES (Sama persis dengan 1.html) --- */
+        :root {
+            --primary-green: #4CAF50;
+            --dark-green: #2E7D32;
+            --light-bg: #F9FBF9;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --wa-color: #25D366;
+            --border-color: #eeeeee;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: #fff;
+            overflow-x: hidden;
+            /* Anti geser kanan kiri */
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        /* --- 2. NAVBAR (Sama persis dengan 1.html) --- */
+        .navbar {
+            background-color: white;
+            padding: 20px 0;
+            transition: all 0.3s;
+        }
+
+        .navbar.shadow-sm {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark-green);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-green);
+        }
+
+        /* --- 3. ARTICLE LAYOUT (Sama persis dengan 1.html) --- */
+
+        /* Hero Article */
+        .article-hero {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: var(--light-bg);
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-green);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            line-height: 1.3;
+        }
+
+        .article-lead {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Content Wrapper */
+        .content-wrapper {
+            background-color: #fff;
+            padding: 4rem 0;
+        }
+
+        .article-body {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .article-body p {
+            margin-bottom: 1.8rem;
+            text-align: justify;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
+        .article-body h2 {
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-green);
+        }
+
+        .article-body h3 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary-green);
+        }
+
+        /* Images inside article */
+        figure {
+            margin: 3rem 0;
+        }
+
+        figure img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+
+        figcaption {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        /* Auto TOC (Table of Contents) */
+        .auto-toc-container {
+            background-color: var(--light-bg);
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 2rem 0 3rem 0;
+        }
+
+        .toc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--dark-green);
+            font-size: 1.2rem;
+        }
+
+        .toc-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .toc-list li {
+            margin-bottom: 12px;
+        }
+
+        .toc-list li a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.3s;
+            border-bottom: 1px solid transparent;
+        }
+
+        .toc-list li a:hover {
+            color: var(--primary-green);
+            padding-left: 5px;
+        }
+
+        /* Baca Juga Box (Internal Link) */
+        .baca-juga {
+            background: #fff;
+            border-left: 5px solid var(--primary-green);
+            padding: 20px 25px;
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+            border-radius: 0 10px 10px 0;
+        }
+
+        .baca-juga i {
+            color: var(--primary-green);
+            font-size: 2rem;
+        }
+
+        .baca-juga a {
+            font-weight: 700;
+            color: var(--dark-green);
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .baca-juga a:hover {
+            color: var(--primary-green);
+            text-decoration: underline;
+        }
+
+        /* Blockquote */
+        blockquote {
+            font-size: 1.4rem;
+            font-style: italic;
+            text-align: center;
+            color: var(--dark-green);
+            margin: 4rem 0;
+            padding: 2rem;
+            position: relative;
+            background: var(--light-bg);
+            border-radius: 20px;
+        }
+
+        blockquote::before {
+            content: '\201C';
+            font-size: 4rem;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--primary-green);
+            opacity: 0.3;
+        }
+
+        /* FAQ Section */
+        details.faq-item {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        details.faq-item:hover {
+            border-color: var(--primary-green);
+        }
+
+        details summary {
+            padding: 18px 25px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--dark-green);
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            background-color: var(--light-bg);
+        }
+
+        details summary::after {
+            content: '+';
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        details p {
+            padding: 20px 25px;
+            margin: 0;
+            border-top: 1px solid #eee;
+            color: #555;
+            background-color: #fff;
+        }
+
+        /* Conclusion Box */
+        .conclusion-box {
+            background-color: var(--dark-green);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .conclusion-box h2 {
+            color: white !important;
+            margin-top: 0;
+        }
+
+        .conclusion-box p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0;
+        }
+
+        /* Author Section */
+        .author-section {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .author-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--light-bg);
+        }
+
+        .share-buttons button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            background: #fff;
+            color: var(--text-dark);
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+
+        .share-buttons button:hover {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+
+        /* --- 4. FOOTER & FLOATING (Sama persis dengan 1.html) --- */
+        footer {
+            padding: 60px 0 20px;
+            background: white;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-dark);
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+
+        .btn-custom {
+            background-color: var(--primary-green);
+            color: white;
+            border-radius: 50px;
+            padding: 8px 25px;
+            font-weight: 500;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--dark-green);
+            color: white;
+        }
+
+        /* Floating Buttons */
+        .floating-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+        .btn-float {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 24px;
+            color: white;
+        }
+
+        .wa-float {
+            background-color: var(--wa-color);
+        }
+
+        .wa-float:hover {
+            background-color: #1ebc57;
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .top-float {
+            background-color: var(--dark-green);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .top-float.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .top-float:hover {
+            background-color: var(--primary-green);
+            transform: translateY(-5px);
+            color: white;
+        }
+
+        /* --- 5. RELATED ARTICLES (Card Style from blog.html) --- */
+        .news-card {
+            background: white;
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+            border: 1px solid #eee;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .news-body {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .news-link {
+            margin-top: auto;
+            color: var(--dark-green);
+            font-weight: 600;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 991px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .author-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-flower1"></i> Lestari Organik
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="keunggulan.html">Keunggulan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="meta-info">30 Jan 2026 • Tips Dapur • 15 Menit Baca</div>
+                    <h1 class="article-title">Sayuran Cepat Busuk? Ini Rahasia Awet Berminggu-minggu</h1>
+                    <p class="article-lead">
+                        Bosan membuang sayuran yang berlendir di kulkas? Yuk benahi cara simpannya sekarang biar stok
+                        belanjaan tetap segar dan crispy saat dimasak.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <article class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 article-body">
+
+                    <figure>
+                        <img src="img/art3.jpeg"
+                            alt="Sayuran Segar di Kulkas" width="800" height="600">
+                        <figcaption>Kulkas yang rapi dan cara simpan yang tepat adalah kunci sayuran awet.</figcaption>
+                    </figure>
+
+                    <div class="auto-toc-container">
+                        <div class="toc-header" onclick="toggleToc()">
+                            <span>Daftar Isi Artikel</span>
+                            <i class="fas fa-chevron-up" id="tocIcon"></i>
+                        </div>
+                        <ul class="toc-list" id="auto-toc-list"></ul>
+                    </div>
+
+                    <p>
+                        Pernah nggak sih kamu merasa guilty saat membuka laci bawah kulkas di akhir minggu? Niat hati
+                        ingin hidup sehat dengan stok sayuran penuh, tapi realitanya malah menemukan bayam yang sudah
+                        berlendir atau wortel yang keriput menyedihkan. Rasanya seperti membuang uang hasil kerja keras
+                        ke tempat sampah begitu saja. Sakit, tapi tak berdarah.
+                    </p>
+                    <p>
+                        Kejadian seperti ini sering banget bikin kita malas belanja sayur lagi. Padahal, masalahnya
+                        bukan pada niat kita, tapi mungkin cara "perlakuan" kita pada sayuran itu yang kurang tepat.
+                        Bayangkan betapa leganya perasaan kamu kalau stok belanjaan minggu ini masih tetap segar dan
+                        crispy saat dimasak minggu depan. Nggak ada lagi drama membuang makanan atau pesan antar makanan
+                        mendadak karena bahan di kulkas sudah tak layak konsumsi. Yuk, kita benahi cara simpannya
+                        sekarang biar nggak menyesal di kemudian hari.
+                    </p>
+
+                    <h2>Kenapa Sayuran Kita Cepat Sekali "Lelah"?</h2>
+                    <p>
+                        Sebelum masuk ke teknis, kita perlu paham dulu filosofi dasarnya. Sayuran itu ibarat rekan kerja
+                        di kantor; beda divisi, beda juga cara pendekatannya. Kamu nggak bisa memperlakukan kangkung
+                        sama persis seperti kamu memperlakukan kentang.
+                    </p>
+                    <p>
+                        Penyebab utama sayuran cepat busuk di kulkas rumah kita biasanya ada dua aktor utamanya:
+                        kelembapan yang berlebih dan gas etilen.
+                    </p>
+                    <p>
+                        Kelembapan adalah teman baik bakteri pembusuk. Jika kamu menyimpan sayuran yang basah kuyup
+                        langsung ke dalam plastik tertutup rapat, itu sama saja kamu sedang membuat "sauna" bagi bakteri
+                        untuk berpesta. Sementara itu, gas etilen adalah hormon alami yang dikeluarkan beberapa jenis
+                        buah dan sayur untuk mempercepat pematangan. Kalau kamu menaruh "si penghasil gas" ini di
+                        sebelah sayuran sensitif, ya wassalam, sayuran sebelah bakal layu sebelum waktunya.
+                    </p>
+
+                    <div class="baca-juga">
+                        <i class="bi bi-basket"></i>
+                        <div>
+                            <small class="d-block text-uppercase text-muted mb-1" style="font-size: 0.7rem;">Rekomendasi
+                                Terkait</small>
+                            <a href="bisnis-sayur-organik.html">Bisnis Sayur Organik, Peluang Cuan yang Sayang
+                                Dilewatkan</a>
+                        </div>
+                    </div>
+
+                    <h2>Strategi Food Prep: Kunci Ketenangan Pikiran</h2>
+                    <p>
+                        Menerapkan metode penyimpanan yang tepat bukan cuma soal agar sayur awet, tapi juga bentuk
+                        self-care. Dapur yang terorganisir bikin mood masak jadi lebih baik. Berikut adalah strategi
+                        yang bisa kamu terapkan berdasarkan jenis sayurannya.
+                    </p>
+
+                    <div class="baca-juga">
+                        <i class="bi bi-heart-pulse"></i>
+                        <div>
+                            <small class="d-block text-uppercase text-muted mb-1" style="font-size: 0.7rem;">Wajib
+                                Tahu</small>
+                            <a href="perbedaan-sayur-organik-biasa.html">Sayur Organik vs Biasa, Yakin Pilihanmu Sudah
+                                Tepat?</a>
+                        </div>
+                    </div>
+
+                    <h3>1. Sayuran Berdaun Hijau (Leafy Greens)</h3>
+                    <p>
+                        Ini adalah golongan yang paling manja dan butuh perhatian ekstra. Bayam, kangkung, selada, dan
+                        sawi punya kadar air tinggi tapi struktur sel yang rapuh.
+                    </p>
+                    <p>
+                        <strong>Jangan Cuci Dulu:</strong> Prinsip utamanya, air adalah musuh saat penyimpanan.
+                        Sebaiknya cuci sayuran sesaat sebelum dimasak. Kalau kamu terpaksa mencucinya saat food prep,
+                        pastikan tiriskan sampai benar-benar kering. Gunakan salad spinner kalau punya.
+                    </p>
+                    <p>
+                        <strong>Teknik Bedong:</strong> Bungkus sayuran hijau dengan kertas merang, tisu dapur, atau
+                        kain katun tipis sebelum dimasukkan ke dalam wadah kedap udara atau kantong silikon. Kertas atau
+                        kain ini berfungsi menyerap kelembapan hasil respirasi sayuran, sehingga daun tetap kering tapi
+                        lingkungan tetap sejuk.
+                    </p>
+                    <p>
+                        <strong>Buang Bagian Busuk:</strong> Satu helai daun busuk bisa "menularkan" kebusukan ke satu
+                        ikat. Jadi, sortir dulu sebelum disimpan ya.
+                    </p>
+
+                    <h3>2. Sayuran Batang dan Bunga (Brokoli & Kembang Kol)</h3>
+                    <p>
+                        Sayuran jenis ini butuh sirkulasi udara tapi tetap butuh kelembapan. Agak tricky, kan?
+                        Caranya, jangan mencuci brokoli sebelum disimpan. Percikkan sedikit air pada bagian kuntumnya,
+                        lalu bungkus batangnya dengan tisu basah (lembab, bukan basah kuyup). Masukkan ke dalam wadah
+                        berlubang atau plastik yang sudah dilubangi sedikit agar mereka tetap bisa "bernapas". Ingat,
+                        mereka butuh oksigen untuk tetap segar.
+                    </p>
+
+                    <h3>3. Sayuran Umbi-umbian dan Akar (Wortel, Kentang, Bawang)</h3>
+                    <p>
+                        Nah, kalau yang ini tipe yang tangguh tapi punya pantangan keras.
+                    </p>
+                    <p>
+                        <strong>Wortel:</strong> Potong bagian daun hijaunya jika kamu membelinya dalam bentuk utuh.
+                        Daun wortel itu menyerap nutrisi dari umbinya, bikin wortel cepat layu. Simpan wortel dalam
+                        wadah tertutup yang dialasi tisu di dalam kulkas.
+                    </p>
+                    <p>
+                        <strong>Kentang dan Bawang:</strong> Dua sejoli ini sebenarnya musuhan. Jangan simpan kentang
+                        dan bawang bombay di satu keranjang. Bawang melepaskan gas yang bikin kentang cepat bertunas.
+                        Simpan mereka di tempat sejuk, gelap, dan kering (suhu ruang). Jauhkan dari sinar matahari
+                        langsung biar nggak beracun (menghijau).
+                    </p>
+
+                    <h3>4. Si Pedas dan Bumbu Dapur (Cabai & Jeruk Nipis)</h3>
+                    <p>
+                        Sebagai orang Indonesia, hidup tanpa cabai itu hampa. Masalahnya, cabai gampang banget bonyok.
+                        Trik jitunya adalah "siapkan kasur yang kering". Masukkan cabai ke dalam wadah plastik yang
+                        sudah dialasi tisu dapur. Selipkan satu siung bawang putih yang sudah dikupas di dalamnya.
+                        Bawang putih punya sifat antibakteri alami yang konon bisa membantu menghambat pembusukan. Tutup
+                        rapat dan taruh di kulkas. Ganti tisunya kalau sudah mulai terasa lembab.
+                    </p>
+
+                    <blockquote>
+                        "Menyimpan sayuran dengan benar adalah cara kita menghargai hasil jerih payah petani dan bumi
+                        yang kita tinggali."
+                    </blockquote>
+
+                    <h2>Seni Mengatur Tata Letak Kulkas</h2>
+                    <p>
+                        Menyimpan sayuran bukan cuma soal wadah, tapi juga zonasi. Kulkas itu punya distribusi suhu yang
+                        beda-beda, lho.
+                        <strong>Laci Bawah (Crisper Drawer):</strong> Ini adalah zona VIP buat sayuran. Suhunya paling
+                        stabil dan kelembapannya terjaga. Masukkan sayuran berdaun hijau di sini.
+                        <strong>Rak Tengah:</strong> Cocok untuk sayuran yang sudah dipotong atau food prep yang mau
+                        dimasak dalam 1-2 hari ke depan.
+                        <strong>Pintu Kulkas:</strong> Ini zona paling labil suhunya karena sering dibuka-tutup. Jangan
+                        taruh sayuran mudah layu di sini. Pintu kulkas lebih cocok untuk saus atau minuman.
+                    </p>
+
+                    <h2>Pisahkan Si "Toxic" dari Si Sensitif</h2>
+                    <p>
+                        Ingat soal gas etilen tadi? Ini penting banget buat menghindari drama di dalam kulkas. Jangan
+                        simpan apel, pisang, alpukat, atau tomat (yang matang) berdekatan dengan sayuran hijau, brokoli,
+                        atau wortel.
+                        Buah-buahan penghasil etilen itu ibarat teman yang membawa pengaruh buruk; kalau didekatkan,
+                        sayuran di sebelahnya bakal cepat tua, menguning, dan akhirnya busuk. Pisahkan mereka di wadah
+                        atau laci yang berbeda.
+                    </p>
+
+                    <h2>Food Waste: Masalah Kita Bersama</h2>
+                    <p>
+                        Kenapa sih kita harus repot-repot melakukan semua ini? Selain bikin dompet lebih tebal karena
+                        jarang buang makanan, menyimpan sayuran dengan benar adalah langkah kecil kita menyelamatkan
+                        bumi.
+                        Setiap batang kangkung yang membusuk di tempat sampah akan menghasilkan gas metana yang
+                        memperparah pemanasan global. Dengan memaksimalkan umur simpan sayuran, kita menghargai energi
+                        petani yang menanam, air yang dipakai menyiram, dan jejak karbon distribusinya. Jadi,
+                        mindset-nya bukan cuma "biar awet", tapi "biar bermanfaat sampai habis".
+                    </p>
+
+                    <p>
+                        Mungkin rasanya ribet harus membungkus satu-satu atau menyediakan wadah khusus. Tapi percayalah,
+                        lelahnya food prep selama 30 menit di akhir pekan akan terbayar lunas saat weekday. Kamu nggak
+                        perlu panik saat pulang kerja, tinggal ambil kotak food prep, cemplungin ke wajan, jadi deh.
+                        Bayangkan betapa nyamannya melihat kulkas yang rapi, bersih, dan penuh bahan makanan segar.
+                        Rasanya seperti sudah menang separuh dari tantangan hidup mingguan. Yuk, mulai cek kulkasmu
+                        sekarang, jangan sampai ada yang "menangis" di pojokan laci karena terlupakan. Sayangi
+                        sayuranmu, sayangi dompetmu.
+                    </p>
+
+                    <div class="my-5">
+                        <h2 style="border:none; font-size:1.8rem;">Pertanyaan Umum (FAQ)</h2>
+
+                        <details class="faq-item">
+                            <summary>Apakah semua sayuran wajib masuk kulkas agar awet?</summary>
+                            <p>Tidak semua. Sayuran seperti kentang, bawang merah, bawang putih, labu, dan tomat yang
+                                belum terlalu matang justru lebih baik disimpan di suhu ruang (tempat sejuk dan gelap).
+                                Suhu dingin kulkas malah bisa merusak tekstur dan rasa mereka, misalnya kentang jadi
+                                manis aneh atau tomat jadi lembek berpasir.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Berapa lama sebenarnya sayuran hijau bisa bertahan jika disimpan dengan metode
+                                tisu/kertas?</summary>
+                            <p>Jika kondisinya kering dan suhunya stabil, sayuran hijau seperti bayam atau selada bisa
+                                bertahan 1 hingga 2 minggu. Kuncinya adalah rajin mengecek dan mengganti tisu/kertas
+                                pembungkus jika sudah terasa basah agar tidak menjadi sarang bakteri.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Bolehkah menyimpan sayuran yang sudah dipotong-potong (meal prep) untuk seminggu?
+                            </summary>
+                            <p>Bisa, tapi daya tahannya berkurang dibandingkan menyimpan utuh. Sayuran potong (seperti
+                                wortel atau buncis) biasanya bertahan segar 3-4 hari dalam wadah kedap udara. Untuk
+                                sayuran yang mudah teroksidasi seperti terong atau kentang kupas, sebaiknya rendam dalam
+                                air di wadah tertutup agar warnanya tidak menghitam.</p>
+                        </details>
+                    </div>
+
+                    <div class="conclusion-box">
+                        <h2 class="h3">Kesimpulan</h2>
+                        <p>
+                            Menyimpan sayuran dengan tepat membutuhkan pemahaman tentang karakteristik masing-masing
+                            jenis, seperti mengontrol kelembapan untuk sayuran hijau dan memisahkan penghasil gas
+                            etilen. Dengan penerapan teknik food preparation yang benar, seperti penggunaan tisu
+                            penyerap dan wadah kedap udara, kita dapat mencegah pembusukan dini, menghemat pengeluaran
+                            belanja, dan mengurangi limbah makanan rumah tangga.
+                        </p>
+                    </div>
+
+                    <div class="mt-5 p-4 bg-light rounded-4">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-link-45deg me-2"></i>Sumber Artikel:</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">Toshiba Lifestyle Indonesia - Cara Menyimpan Sayuran di Kulkas Agar Tetap
+                                Segar</li>
+                            <li class="mb-2">Detik Food - Catat! 7 Cara Menyimpan Sayuran Agar Awet Segar
+                                Berminggu-minggu</li>
+                            <li>Zero Waste Indonesia - 5 Tips Ini Dapat Kamu Lakukan Agar Sayuran Lebih Awet</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&q=80&w=800"
+                            alt="Sayuran Segar Lestari Organik"
+                            style="width: 100%; border-radius: 15px; margin-bottom: 20px; object-fit: cover; max-height: 300px;">
+                        <a href="https://wa.me/6282257391460" class="btn btn-custom btn-lg rounded-pill px-5 py-3 mt-2">
+                            <i class="bi bi-whatsapp me-2"></i> Belanja Sayuran Organik Segar
+                        </a>
+                    </div>
+
+                    <div class="author-section">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=200"
+                            alt="Penulis" class="author-img">
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1 fw-bold text-success">Tim Quality Control Lestari</h5>
+                            <small class="text-muted d-block mb-2">Food Safety Expert @ Lestari Organik</small>
+                            <p class="small mb-0 text-muted">Berkomitmen menjaga standar kualitas panen agar setiap
+                                sayuran yang sampai ke tangan Anda tetap segar dan bernutrisi tinggi.</p>
+                        </div>
+                        <div class="share-buttons text-center">
+                            <p class="small text-muted mb-2">Bagikan:</p>
+                            <div class="d-flex justify-content-center">
+                                <button onclick="shareSocial('wa')"><i class="fab fa-whatsapp"></i></button>
+                                <button onclick="shareSocial('fb')"><i class="fab fa-facebook-f"></i></button>
+                                <button onclick="shareSocial('li')"><i class="fab fa-linkedin-in"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="display-6 mb-5 text-center fw-bold text-success">Artikel Terkait</h3>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=600&q=80"
+                            alt="Bisnis Sayur" class="news-img">
+                        <div class="news-body">
+                            <span class="text-success small fw-bold text-uppercase mb-2">22 Jan 2026</span>
+                            <h5 class="news-title">Bisnis Sayur Organik, Peluang Cuan yang Sayang Dilewatkan</h5>
+                            <p class="small text-muted mb-3">Ketika kesadaran akan pola makan sehat meningkat drastis,
+                                permintaan terhadap peluang usaha sayur organik pun meroket.</p>
+                            <a href="bisnis-sayur-organik.html" class="news-link">Baca Selengkapnya <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1592841200221-a68997d5a259?auto=format&fit=crop&w=600&q=80"
+                            alt="Sayur Organik vs Biasa" class="news-img">
+                        <div class="news-body">
+                            <span class="text-success small fw-bold text-uppercase mb-2">30 Jan 2026</span>
+                            <h5 class="news-title">Sayur Organik vs Biasa, Yakin Pilihanmu Sudah Tepat?</h5>
+                            <p class="small text-muted mb-3">Ketahui perbedaan mendalam antara sayur organik dan
+                                konvensional sebelum kamu belanja lagi.</p>
+                            <a href="perbedaan-sayur-organik-biasa.html" class="news-link">Baca Selengkapnya <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?auto=format&fit=crop&w=600&q=80"
+                            alt="Kale Superfood" class="news-img">
+                        <div class="news-body">
+                            <span class="text-success small fw-bold text-uppercase mb-2">12 Jan 2026</span>
+                            <h5 class="news-title">Mengapa Kale Disebut Superfood</h5>
+                            <p class="small text-muted mb-3">Kaya akan vitamin K, A, dan C, sayuran ini menjadi
+                                primadona pola makan sehat modern.</p>
+                            <a href="5.html" class="news-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand mb-3" href="index.html">
+                        <i class="bi bi-flower1"></i> Lestari Organik
+                    </a>
+                    <p class="text-muted mb-3">Misi kami adalah mendorong kemajuan dan meningkatkan kehidupan
+                        pelanggan dengan pangan sehat.</p>
+                    <a href="produk.html" class="btn btn-custom mt-3 btn-sm">Belanja Sekarang <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Tautan Cepat</h6>
+                    <ul class="list-unstyled text-muted lh-lg">
+                        <li><a href="index.html" class="text-decoration-none text-muted">Beranda</a></li>
+                        <li><a href="tentang.html" class="text-decoration-none text-muted">Tentang Kami</a></li>
+                        <li><a href="keunggulan.html" class="text-decoration-none text-muted">Keunggulan</a></li>
+                        <li><a href="produk.html" class="text-decoration-none text-muted">Produk</a></li>
+                        <li><a href="blog.html" class="text-decoration-none text-muted">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Kontak</h6>
+                    <ul class="list-unstyled text-muted lh-lg">
+                        <li><i class="bi bi-whatsapp me-2"></i> 0822-5739-1460</li>
+                        <li><i class="bi bi-envelope me-2"></i> halo@lestariorganik.com</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> Jl. Raya Kebun No. 88, Bogor</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Sosial Media</h6>
+                    <div class="d-flex mb-3">
+                        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top mt-5 pt-4 text-center text-muted">
+                <p>&copy; 2024 Lestari Organik. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <a href="#top" class="btn-float top-float" id="backToTop">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+        <a href="https://wa.me/6282257391460?text=Halo%20Admin,%20saya%20tertarik%20dengan%20info%20di%20artikel%20Wortel"
+            target="_blank" class="btn-float wa-float">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // --- 1. Navbar & Scroll Logic ---
+        window.addEventListener('scroll', function () {
+            // Navbar Shadow
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('shadow-sm');
+            } else {
+                document.querySelector('.navbar').classList.remove('shadow-sm');
+            }
+
+            // Back to Top Visibility
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // --- 2. TOC Generator Logic ---
+        document.addEventListener('DOMContentLoaded', function () {
+            const tocList = document.getElementById('auto-toc-list');
+            const headers = document.querySelectorAll('.article-body h2, .article-body h3');
+
+            if (headers.length > 0) {
+                headers.forEach((header, index) => {
+                    // Ignore FAQ heading which might be h2
+                    if (header.innerText.includes("Pertanyaan Umum") || header.innerText.includes("Kesimpulan")) return;
+
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+
+                    if (!header.id) header.id = 'section-' + index;
+                    a.href = '#' + header.id;
+                    a.textContent = header.textContent;
+
+                    if (header.tagName === 'H3') {
+                        li.style.marginLeft = '20px';
+                        li.style.listStyleType = 'circle';
+                        a.style.fontSize = '0.95rem';
+                    }
+                    li.appendChild(a);
+                    tocList.appendChild(li);
+                });
+            } else {
+                // Sembunyikan jika tidak ada header
+                const container = document.querySelector('.auto-toc-container');
+                if (container) container.style.display = 'none';
+            }
+        });
+
+        // --- 3. Toggle TOC ---
+        function toggleToc() {
+            const list = document.getElementById('auto-toc-list');
+            const icon = document.getElementById('tocIcon');
+            if (list.style.display === 'none') {
+                list.style.display = 'block';
+                icon.className = 'fas fa-chevron-up';
+            } else {
+                list.style.display = 'none';
+                icon.className = 'fas fa-chevron-down';
+            }
+        }
+
+        // --- 4. Share Social Logic ---
+        function shareSocial(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent(document.title);
+            let shareUrl = '';
+            if (platform === 'wa') shareUrl = `https://api.whatsapp.com/send?text=${text}%20${url}`;
+            else if (platform === 'fb') shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+            else if (platform === 'li') shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+            window.open(shareUrl, '_blank', 'width=600,height=400');
+        }
+    </script>
+</body>
+
+</html>

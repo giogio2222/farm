@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayur Organik vs Biasa, Yakin Pilihanmu Sudah Tepat? - Lestari Organik</title>
+
+    <meta name="description"
+        content="Ketahui perbedaan mendalam antara sayur organik dan konvensional. Bandingkan nutrisi, residu pestisida, rasa, hingga cara menyiasati budget belanja sayur keluarga.">
+    <meta name="keywords"
+        content="sayur organik vs biasa, perbedaan sayur organik, residu pestisida, harga sayur organik, nutrisi sayur, lestari organik">
+    <meta name="author" content="Lestari Organik">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* --- 1. GLOBAL VARIABLES (Sama persis dengan 1.html) --- */
+        :root {
+            --primary-green: #4CAF50;
+            --dark-green: #2E7D32;
+            --light-bg: #F9FBF9;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --wa-color: #25D366;
+            --border-color: #eeeeee;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: #fff;
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        /* --- 2. NAVBAR (Sama persis dengan 1.html) --- */
+        .navbar {
+            background-color: white;
+            padding: 20px 0;
+            transition: all 0.3s;
+        }
+
+        .navbar.shadow-sm {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark-green);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+            font-weight: 500;
+            margin: 0 10px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-green);
+        }
+
+        /* --- 3. ARTICLE LAYOUT (Sama persis dengan 1.html) --- */
+
+        /* Hero Article */
+        .article-hero {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: var(--light-bg);
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-green);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-weight: 700;
+            color: var(--dark-green);
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            line-height: 1.3;
+        }
+
+        .article-lead {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Content Wrapper */
+        .content-wrapper {
+            background-color: #fff;
+            padding: 4rem 0;
+        }
+
+        .article-body {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .article-body p {
+            margin-bottom: 1.8rem;
+            text-align: justify;
+            color: #444;
+            font-size: 1.1rem;
+        }
+
+        .article-body h2 {
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-green);
+        }
+
+        .article-body h3 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary-green);
+        }
+
+        /* Images inside article */
+        figure {
+            margin: 3rem 0;
+        }
+
+        figure img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+
+        figcaption {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        /* Auto TOC (Table of Contents) */
+        .auto-toc-container {
+            background-color: var(--light-bg);
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 2rem 0 3rem 0;
+        }
+
+        .toc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--dark-green);
+            font-size: 1.2rem;
+        }
+
+        .toc-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .toc-list li {
+            margin-bottom: 12px;
+        }
+
+        .toc-list li a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.3s;
+            border-bottom: 1px solid transparent;
+        }
+
+        .toc-list li a:hover {
+            color: var(--primary-green);
+            padding-left: 5px;
+        }
+
+        /* Baca Juga Box (Internal Link) */
+        .baca-juga {
+            background: #fff;
+            border-left: 5px solid var(--primary-green);
+            padding: 20px 25px;
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+            border-radius: 0 10px 10px 0;
+        }
+
+        .baca-juga i {
+            color: var(--primary-green);
+            font-size: 2rem;
+        }
+
+        .baca-juga a {
+            font-weight: 700;
+            color: var(--dark-green);
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .baca-juga a:hover {
+            color: var(--primary-green);
+            text-decoration: underline;
+        }
+
+        /* Blockquote */
+        blockquote {
+            font-size: 1.4rem;
+            font-style: italic;
+            text-align: center;
+            color: var(--dark-green);
+            margin: 4rem 0;
+            padding: 2rem;
+            position: relative;
+            background: var(--light-bg);
+            border-radius: 20px;
+        }
+
+        blockquote::before {
+            content: '\201C';
+            font-size: 4rem;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--primary-green);
+            opacity: 0.3;
+        }
+
+        /* FAQ Section */
+        details.faq-item {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        details.faq-item:hover {
+            border-color: var(--primary-green);
+        }
+
+        details summary {
+            padding: 18px 25px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--dark-green);
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            background-color: var(--light-bg);
+        }
+
+        details summary::after {
+            content: '+';
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        details p {
+            padding: 20px 25px;
+            margin: 0;
+            border-top: 1px solid #eee;
+            color: #555;
+            background-color: #fff;
+        }
+
+        /* Conclusion Box */
+        .conclusion-box {
+            background-color: var(--dark-green);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .conclusion-box h2 {
+            color: white !important;
+            margin-top: 0;
+        }
+
+        .conclusion-box p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0;
+        }
+
+        /* Author Section */
+        .author-section {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .author-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--light-bg);
+        }
+
+        .share-buttons button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            background: #fff;
+            color: var(--text-dark);
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+
+        .share-buttons button:hover {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+
+        /* --- 4. FOOTER & FLOATING (Sama persis dengan 1.html) --- */
+        footer {
+            padding: 60px 0 20px;
+            background: white;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-dark);
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+
+        .btn-custom {
+            background-color: var(--primary-green);
+            color: white;
+            border-radius: 50px;
+            padding: 8px 25px;
+            font-weight: 500;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--dark-green);
+            color: white;
+        }
+
+        /* Floating Buttons */
+        .floating-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+        .btn-float {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 24px;
+            color: white;
+        }
+
+        .wa-float {
+            background-color: var(--wa-color);
+        }
+
+        .wa-float:hover {
+            background-color: #1ebc57;
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .top-float {
+            background-color: var(--dark-green);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .top-float.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .top-float:hover {
+            background-color: var(--primary-green);
+            transform: translateY(-5px);
+            color: white;
+        }
+
+        /* --- 5. RELATED ARTICLES (Card Style) --- */
+        .news-card {
+            background: white;
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+            border: 1px solid #eee;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .news-body {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .news-link {
+            margin-top: auto;
+            color: var(--dark-green);
+            font-weight: 600;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 991px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .author-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-flower1"></i> Lestari Organik
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="keunggulan.html">Keunggulan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="meta-info">30 Jan 2026 • Perbandingan • 12 Menit Baca</div>
+                    <h1 class="article-title">Sayur Organik vs Biasa, Yakin Pilihanmu Sudah Tepat?</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <article class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 article-body">
+
+                    <figure>
+                        <img src="img/art2.jpeg"
+                            alt="Menanam Tomat di Rumah" width="800" height="600">
+                        <figcaption>Perbedaan sayur organik dan biasa seringkali bukan hanya soal harga, tapi soal
+                            kualitas hidup.</figcaption>
+                    </figure>
+
+                    <div class="auto-toc-container">
+                        <div class="toc-header" onclick="toggleToc()">
+                            <span>Daftar Isi Artikel</span>
+                            <i class="fas fa-chevron-up" id="tocIcon"></i>
+                        </div>
+                        <ul class="toc-list" id="auto-toc-list"></ul>
+                    </div>
+
+                    <p>
+                        Pernahkah kamu berdiri termangu di lorong supermarket, memegang dua ikat bayam di tangan kanan
+                        dan kiri? Di satu sisi, ada bayam biasa dengan harga yang sangat bersahabat. Di sisi lain, ada
+                        bayam dengan label "organik" yang harganya bisa dua hingga tiga kali lipat lebih mahal. Mungkin
+                        kamu berpikir, "Ah, sama-sama sayur ini, rasanya pasti mirip." Akhirnya, kamu memilih yang murah
+                        demi menghemat pengeluaran bulanan.
+                    </p>
+                    <p>
+                        Namun, pernahkah terlintas di benakmu tentang apa yang sebenarnya kamu bawa pulang bersama
+                        sayuran tersebut? Keputusan kecil di depan rak sayur ini sebenarnya bukan sekadar soal selisih
+                        harga seribu atau dua ribu rupiah, tapi investasi jangka panjang untuk tubuhmu. Jangan sampai di
+                        kemudian hari kamu menyesal karena mengabaikan residu kimia yang menumpuk perlahan dalam tubuh
+                        keluarga tercinta hanya karena kurangnya informasi saat ini. Sebelum kamu belanja lagi, yuk kita
+                        bedah tuntas apa sebenarnya yang membedakan kedua jenis sayuran ini agar kamu bisa tidur nyenyak
+                        mengetahui pilihanmu sudah tepat.
+                    </p>
+
+                    <h2>Apa Sebenarnya yang Dimaksud Sayur Organik?</h2>
+                    <p>
+                        Seringkali kita terjebak dalam label tanpa benar-benar memahami proses di baliknya. Secara
+                        sederhana, perbedaan sayur organik dan konvensional terletak pada "cara asuh" petani terhadap
+                        tanaman tersebut sejak berupa benih hingga siap panen.
+                    </p>
+                    <p>
+                        Sayur organik ditanam dengan prinsip kembali ke alam. Bayangkan sebuah ekosistem kecil di mana
+                        tanaman tumbuh tanpa bantuan bahan kimia sintetis. Petani organik menggunakan pupuk kandang atau
+                        kompos alami untuk menyuburkan tanah, bukan pupuk urea buatan pabrik. Jika ada hama yang
+                        menyerang, mereka tidak menyemprotkan pestisida kimia yang keras, melainkan menggunakan
+                        pestisida nabati atau metode rotasi tanaman untuk memutus siklus hidup hama.
+                    </p>
+                    <p>
+                        Sebaliknya, sayur konvensional (non-organik) dibudidayakan dengan orientasi hasil yang maksimal
+                        dan efisien. Penggunaan pupuk kimia dan pestisida sintetis adalah hal yang lumrah untuk
+                        memastikan tanaman tumbuh cepat, besar, dan bebas dari serangan serangga yang merusak tampilan
+                        fisik sayur.
+                    </p>
+
+                    <div class="baca-juga">
+                        <i class="bi bi-basket"></i>
+                        <div>
+                            <small class="d-block text-uppercase text-muted mb-1" style="font-size: 0.7rem;">Rekomendasi
+                                Terkait</small>
+                            <a href="bisnis-sayur-organik.html">Bisnis Sayur Organik, Peluang Cuan yang Sayang
+                                Dilewatkan</a>
+                        </div>
+                    </div>
+
+                    <h2>Perbedaan Fisik yang Bisa Kamu Lihat Langsung</h2>
+                    <p>
+                        Jika kamu jeli, sebenarnya ada tanda-tanda fisik yang bisa membedakan kedua jenis sayur ini
+                        tanpa perlu melihat label harganya.
+                    </p>
+                    <p>
+                        Pertama, mari bicara soal kesempurnaan. Sayur konvensional biasanya tampil bak model di atas
+                        panggung: daunnya mulus, warnanya hijau seragam, ukurannya besar-besar, dan nyaris tanpa cacat.
+                        Ini karena perlindungan ketat dari pestisida yang membuat ulat dan serangga enggan mendekat.
+                    </p>
+                    <p>
+                        Sementara itu, sayur organik seringkali memiliki penampilan yang tidak terlalu "glowing".
+                        Mungkin kamu akan menemukan lubang kecil bekas gigitan ulat di daun sawi atau ukurannya yang
+                        tidak seragam antara satu ikat dengan ikat lainnya. Jangan buru-buru jijik, ya. Lubang kecil itu
+                        justru bisa menjadi indikator alami bahwa sayuran tersebut aman dan "disukai" oleh makhluk hidup
+                        lain karena minim racun. Warnanya pun biasanya hijau alami, tidak terlalu mengkilap seperti
+                        sayuran yang dilapisi lilin pelindung.
+                    </p>
+
+                    <div class="baca-juga">
+                        <i class="bi bi-heart-pulse"></i>
+                        <div>
+                            <small class="d-block text-uppercase text-muted mb-1" style="font-size: 0.7rem;">Wajib
+                                Tahu</small>
+                            <a href="tips-simpan-sayur-awet.html">Sayuran Cepat Busuk? Ini Rahasia Awet
+                                Berminggu-minggu</a>
+                        </div>
+                    </div>
+
+                    <h2>Adu Kandungan Nutrisi: Siapa Pemenangnya?</h2>
+                    <p>
+                        Ini adalah pertanyaan sejuta umat: apakah harga mahal menjamin nutrisi yang lebih tinggi?
+                        Jawabannya cukup menarik dan tidak sesederhana "ya" atau "tidak".
+                    </p>
+                    <p>
+                        Beberapa studi menunjukkan bahwa perbedaan sayur organik dan konvensional dari sisi makronutrien
+                        (karbohidrat, protein, lemak) sebenarnya tidak terlalu signifikan. Jadi, makan kangkung biasa
+                        pun kamu tetap akan mendapatkan serat yang baik.
+                    </p>
+                    <p>
+                        Namun, "keajaiban" organik terletak pada mikronutriennya. Sayuran organik cenderung memiliki
+                        kandungan antioksidan, seperti flavonoid dan polifenol, yang lebih tinggi. Mengapa bisa begitu?
+                        Karena tanaman yang tumbuh tanpa perlindungan pestisida kimia harus "berjuang" memproduksi
+                        senyawa pertahanan diri mereka sendiri. Senyawa inilah yang kemudian menjadi antioksidan
+                        bermanfaat bagi tubuh kita saat dikonsumsi.
+                    </p>
+                    <p>
+                        Selain itu, sayur organik umumnya memiliki kadar nitrat yang lebih rendah dibandingkan sayur
+                        konvensional yang dipupuk dengan nitrogen sintetis berlebih. Kadar nitrat yang terlalu tinggi
+                        dalam tubuh sering dikaitkan dengan risiko kesehatan jangka panjang tertentu.
+                    </p>
+
+                    <blockquote>
+                        "Memilih organik adalah cara kita menghargai tubuh sendiri dan memberikan perlindungan terbaik
+                        bagi orang-orang tersayang."
+                    </blockquote>
+
+                    <h2>Masalah Residu Pestisida dan Keamanan Pangan</h2>
+                    <p>
+                        Di sinilah letak poin krusial yang sering membuat para ibu khawatir. Isu residu pestisida adalah
+                        alasan utama mengapa banyak orang beralih ke organik.
+                    </p>
+                    <p>
+                        Pada sayuran konvensional, sisa-siapa pestisida sintetis bisa saja masih menempel pada kulit
+                        buah atau permukaan daun, bahkan setelah dicuci. Meskipun batas residu ini biasanya diatur oleh
+                        badan pengawas pangan agar tetap dalam ambang batas aman, efek akumulatif (penumpukan) dalam
+                        jangka waktu bertahun-tahun masih menjadi perdebatan para ahli kesehatan.
+                    </p>
+                    <p>
+                        Sayur organik menawarkan ketenangan pikiran (peace of mind). Karena tidak menggunakan bahan
+                        kimia sintetis dalam proses penanamannya, risiko masuknya residu berbahaya ke dalam tubuh bisa
+                        diminimalisir secara drastis. Ini sangat penting, terutama jika kamu sedang menyiapkan Makanan
+                        Pendamping ASI (MPASI) untuk bayi atau makanan untuk lansia yang sistem imunnya lebih sensitif.
+                    </p>
+                    <p>
+                        Namun, perlu diingat bahwa label "organik" tidak berarti 100% bebas dari segala zat. Pencemaran
+                        bisa terjadi dari air irigasi atau lahan tetangga, tetapi levelnya jauh lebih rendah dan lebih
+                        terkontrol dibandingkan pertanian konvensional.
+                    </p>
+
+                    <h2>Rasa dan Daya Simpan</h2>
+                    <p>
+                        Pernahkah kamu merasa wortel organik terasa lebih manis dan renyah? Itu bukan sugesti semata.
+                        Karena tidak dipacu paksa untuk tumbuh cepat dengan pupuk kimia, tanaman organik memiliki waktu
+                        yang cukup untuk mengembangkan struktur sel dan rasa alaminya secara maksimal. Kandungan air
+                        pada sayur organik juga biasanya lebih sedikit (lebih padat materi), yang membuat rasanya lebih
+                        intens dan gurih alami saat dimasak.
+                    </p>
+                    <p>
+                        Dari segi daya simpan, sayur organik memang lebih "manja". Tanpa pengawet pasca-panen atau
+                        lapisan lilin, sayur organik cenderung lebih cepat layu jika tidak disimpan dengan benar di
+                        kulkas. Ini sebenarnya tanda bahwa proses pembusukan alami berjalan normal, layaknya siklus alam
+                        yang seharusnya.
+                    </p>
+
+                    <h2>Menyiasati Budget: Tidak Harus "All or Nothing"</h2>
+                    <p>
+                        Mungkin sekarang kamu berpikir, "Waduh, kalau begitu aku harus ganti semua stok kulkas jadi
+                        organik dong? Dompet bisa jebol!" Tenang, tidak perlu panik. Menjaga kesehatan bukan berarti
+                        harus mengorbankan stabilitas ekonomi keluarga.
+                    </p>
+                    <p>
+                        Kamu bisa menerapkan strategi prioritas. Ada kelompok sayuran dan buah yang dikenal dengan
+                        istilah Dirty Dozen (paling banyak residu pestisida), seperti stroberi, bayam, kale, dan apel.
+                        Untuk jenis ini, jika ada budget lebih, sangat disarankan memilih yang organik.
+                    </p>
+                    <p>
+                        Sementara itu, untuk kelompok Clean Fifteen (paling sedikit residu), seperti alpukat, bawang
+                        bombay, jagung manis, atau kol, membeli yang konvensional pun sebenarnya relatif aman, asalkan
+                        kamu mencucinya dengan benar. Teknik mencuci dengan air mengalir dan merendam sebentar dengan
+                        air garam atau cuka apel bisa sangat efektif mengurangi residu pestisida pada sayur biasa.
+                    </p>
+
+                    <p>
+                        Pada akhirnya, perdebatan antara sayur organik dan biasa ini kembali pada prioritas dan kondisi
+                        masing-masing individu. Memilih sayur organik memang memberikan lapisan keamanan ekstra dan
+                        potensi nutrisi mikro yang lebih baik, sebuah investasi kesehatan yang mungkin baru terasa
+                        manfaatnya bertahun-tahun lagi.
+                    </p>
+                    <p>
+                        Namun, jangan sampai ketakutan akan pestisida membuatmu berhenti makan sayur sama sekali hanya
+                        karena budget terbatas untuk membeli yang organik. Mengonsumsi sayur konvensional jauh lebih
+                        baik dan menyehatkan daripada tidak makan sayur sama sekali. Tubuhmu tetap butuh serat dan
+                        vitamin setiap hari. Jadi, bijaklah dalam memilih, sesuaikan dengan kemampuan, dan pastikan
+                        proses pengolahan di dapurmu higienis. Dengan begitu, kamu sudah melakukan langkah terbaik untuk
+                        menjaga kesehatan diri sendiri dan keluarga.
+                    </p>
+
+                    <div class="my-5">
+                        <h2 style="border:none; font-size:1.8rem;">Pertanyaan Umum (FAQ)</h2>
+
+                        <details class="faq-item">
+                            <summary>Apakah mencuci sayur biasa dengan sabun khusus bisa membuatnya setara dengan
+                                organik?</summary>
+                            <p>Tidak sepenuhnya. Mencuci dengan sabun khusus buah dan sayur memang efektif mengangkat
+                                residu pestisida di permukaan kulit dan kotoran fisik, tetapi tidak bisa menghilangkan
+                                pestisida sistemik yang sudah terserap ke dalam jaringan daging buah atau batang sayur.
+                                Namun, langkah ini tetap sangat disarankan untuk mengurangi paparan kimia.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Apakah sayuran hidroponik itu otomatis organik?</summary>
+                            <p>Belum tentu. Hidroponik adalah metode menanam tanpa tanah, biasanya menggunakan air yang
+                                dicampur nutrisi. Jika nutrisi yang dilarutkan dalam air tersebut adalah pupuk kimia
+                                buatan, maka itu tidak bisa disebut organik. Hidroponik baru bisa disebut organik jika
+                                nutrisi airnya berasal dari bahan-bahan alami dan tersertifikasi.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Kenapa sayur organik cepat sekali busuk dibandingkan sayur biasa?</summary>
+                            <p>Sayur organik tidak menggunakan bahan pengawet pasca-panen atau lilin pelapis yang biasa
+                                digunakan pada produk konvensional untuk memperlambat pembusukan. Selain itu, karena
+                                bebas pestisida, bakteri pengurai alami mungkin sudah ada di permukaan dalam jumlah
+                                wajar, membuat siklus alaminya berjalan normal.</p>
+                        </details>
+                    </div>
+
+                    <div class="conclusion-box">
+                        <h2 class="h3">Kesimpulan</h2>
+                        <p>
+                            Memahami perbedaan sayur organik dan konvensional penting untuk menyeimbangkan kebutuhan
+                            nutrisi keluarga dengan keamanan pangan dari residu pestisida. Meski organik lebih minim
+                            kimia, sayur konvensional tetap bermanfaat asalkan dicuci bersih, sehingga pilihan bisa
+                            disesuaikan dengan budget.
+                        </p>
+                    </div>
+
+                    <div class="mt-5 p-4 bg-light rounded-4">
+                        <h5 class="fw-bold mb-3"><i class="bi bi-link-45deg me-2"></i>Sumber Artikel:</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">Ini Fakta tentang Sayur Organik yang Perlu Anda Ketahui - Alodokter</li>
+                            <li class="mb-2">Bedanya Sayur Organik dan Non-organik, Ketahui Sebelum Beli - Kompas Food
+                            </li>
+                            <li>Benarkah Sayuran Organik Lebih Sehat Dibanding Non-Organik? - Good Doctor</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <img src="https://images.unsplash.com/photo-1591157154944-a63e620d7715?auto=format&fit=crop&q=80&w=800"
+                            alt="Panen Tomat Melimpah"
+                            style="width: 100%; border-radius: 15px; margin-bottom: 20px; object-fit: cover; max-height: 300px;">
+                        <a href="https://wa.me/6282257391460" class="btn btn-custom btn-lg rounded-pill px-5 py-3 mt-2">
+                            <i class="bi bi-whatsapp me-2"></i> Konsultasi Bibit & Media Tanam
+                        </a>
+                    </div>
+
+                    <div class="author-section">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=200"
+                            alt="Penulis" class="author-img">
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1 fw-bold text-success">Tim Ahli Tani Lestari</h5>
+                            <small class="text-muted d-block mb-2">Gardening Expert @ Lestari Organik</small>
+                            <p class="small mb-0 text-muted">Berbagi pengalaman praktis berkebun organik di lahan
+                                terbatas untuk kemandirian pangan keluarga Indonesia.</p>
+                        </div>
+                        <div class="share-buttons text-center">
+                            <p class="small text-muted mb-2">Bagikan:</p>
+                            <div class="d-flex justify-content-center">
+                                <button onclick="shareSocial('wa')"><i class="fab fa-whatsapp"></i></button>
+                                <button onclick="shareSocial('fb')"><i class="fab fa-facebook-f"></i></button>
+                                <button onclick="shareSocial('li')"><i class="fab fa-linkedin-in"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="display-6 mb-5 text-center fw-bold text-success">Artikel Terkait</h3>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=600&q=80"
+                            alt="Bisnis Sayur" class="news-img">
+                        <div class="news-body">
+                            <span class="text-success small fw-bold text-uppercase mb-2">22 Jan 2026</span>
+                            <h5 class="news-title">Bisnis Sayur Organik, Peluang Cuan yang Sayang Dilewatkan</h5>
+                            <p class="small text-muted mb-3">Ketika kesadaran akan pola makan sehat meningkat drastis,
+                                permintaan terhadap peluang usaha sayur organik pun meroket.</p>
+                            <a href="bisnis-sayur-organik.html" class="news-link">Baca Selengkapnya <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=600&q=80"
+                            alt="Menyimpan Sayur" class="news-img">
+                        <div class="news-body">
+                            <span class="text-success small fw-bold text-uppercase mb-2">30 Jan 2026</span>
+                            <h5 class="news-title">Sayuran Cepat Busuk? Ini Rahasia Awet Berminggu-minggu</h5>
+                            <p class="small text-muted mb-3">Temukan rahasia menyimpan sayuran agar tetap segar
+                                berminggu-minggu di kulkas Anda.</p>
+                            <a href="tips-simpan-sayur-awet.html" class="news-link">Baca Selengkapnya <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80"
+                            alt="Perbedaan Organik" class="news-img">
+                        <div class="news-body">
+                            <span class="text-success small fw-bold text-uppercase mb-2">10 Jan 2026</span>
+                            <h5 class="news-title">Perbedaan Sayur Organik dan Biasa</h5>
+                            <p class="small text-muted mb-3">Mengupas tuntas perbedaan proses penanaman, rasa, dan
+                                dampak lingkungan antara organik dan konvensional.</p>
+                            <a href="#" class="news-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand mb-3" href="index.html">
+                        <i class="bi bi-flower1"></i> Lestari Organik
+                    </a>
+                    <p class="text-muted mb-3">Misi kami adalah mendorong kemajuan dan meningkatkan kehidupan
+                        pelanggan dengan pangan sehat.</p>
+                    <a href="produk.html" class="btn btn-custom mt-3 btn-sm">Belanja Sekarang <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Tautan Cepat</h6>
+                    <ul class="list-unstyled text-muted lh-lg">
+                        <li><a href="index.html" class="text-decoration-none text-muted">Beranda</a></li>
+                        <li><a href="tentang.html" class="text-decoration-none text-muted">Tentang Kami</a></li>
+                        <li><a href="keunggulan.html" class="text-decoration-none text-muted">Keunggulan</a></li>
+                        <li><a href="produk.html" class="text-decoration-none text-muted">Produk</a></li>
+                        <li><a href="blog.html" class="text-decoration-none text-muted">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Kontak</h6>
+                    <ul class="list-unstyled text-muted lh-lg">
+                        <li><i class="bi bi-whatsapp me-2"></i> 0822-5739-1460</li>
+                        <li><i class="bi bi-envelope me-2"></i> halo@lestariorganik.com</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> Jl. Raya Kebun No. 88, Bogor</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Sosial Media</h6>
+                    <div class="d-flex mb-3">
+                        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top mt-5 pt-4 text-center text-muted">
+                <p>&copy; 2024 Lestari Organik. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <a href="#top" class="btn-float top-float" id="backToTop">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+        <a href="https://wa.me/6282257391460?text=Halo%20Admin,%20saya%20tertarik%20dengan%20info%20di%20artikel%20Tomat"
+            target="_blank" class="btn-float wa-float">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // --- 1. Navbar & Scroll Logic (From blog.html) ---
+        window.addEventListener('scroll', function () {
+            // Navbar Shadow
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('shadow-sm');
+            } else {
+                document.querySelector('.navbar').classList.remove('shadow-sm');
+            }
+
+            // Back to Top Visibility
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // --- 2. TOC Generator Logic (From 1.html) ---
+        document.addEventListener('DOMContentLoaded', function () {
+            const tocList = document.getElementById('auto-toc-list');
+            const headers = document.querySelectorAll('.article-body h2, .article-body h3');
+
+            if (headers.length > 0) {
+                headers.forEach((header, index) => {
+                    // Ignore FAQ heading which might be h2
+                    if (header.innerText.includes("Pertanyaan Umum") || header.innerText.includes("Kesimpulan")) return;
+
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+
+                    if (!header.id) header.id = 'section-' + index;
+                    a.href = '#' + header.id;
+                    a.textContent = header.textContent;
+
+                    if (header.tagName === 'H3') {
+                        li.style.marginLeft = '20px';
+                        li.style.listStyleType = 'circle';
+                        a.style.fontSize = '0.95rem';
+                    }
+                    li.appendChild(a);
+                    tocList.appendChild(li);
+                });
+            } else {
+                // Sembunyikan jika tidak ada header
+                const container = document.querySelector('.auto-toc-container');
+                if (container) container.style.display = 'none';
+            }
+        });
+
+        // --- 3. Toggle TOC ---
+        function toggleToc() {
+            const list = document.getElementById('auto-toc-list');
+            const icon = document.getElementById('tocIcon');
+            if (list.style.display === 'none') {
+                list.style.display = 'block';
+                icon.className = 'fas fa-chevron-up';
+            } else {
+                list.style.display = 'none';
+                icon.className = 'fas fa-chevron-down';
+            }
+        }
+
+        // --- 4. Share Social Logic (From 1.html) ---
+        function shareSocial(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent(document.title);
+            let shareUrl = '';
+            if (platform === 'wa') shareUrl = `https://api.whatsapp.com/send?text=${text}%20${url}`;
+            else if (platform === 'fb') shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+            else if (platform === 'li') shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+            window.open(shareUrl, '_blank', 'width=600,height=400');
+        }
+    </script>
+</body>
+
+</html>
